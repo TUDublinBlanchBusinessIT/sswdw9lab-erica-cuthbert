@@ -27,6 +27,14 @@ Class CarPolicy {
     {
         return "PN: " . $this->policyNumber;
     }
+
+    public function getDiscount()
+    {
+        if ($this->getTotalYears)
+            return $discount;
+            $yp = $this->yearlyPremium;
+            $discount = ($yp/100);
+    }
 }
 
 ?>
